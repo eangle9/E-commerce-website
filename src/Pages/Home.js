@@ -87,7 +87,7 @@ const Home = () => {
                             <div className="d-flex align-items-center gap-30">
                                 <img src="images/service.png" alt="service"/>
                                 <div>
-                                    <h6>Free Shipping</h6>
+                                    <h6>Free Shipping testfdj</h6>
                                     <p>From all orders over $100</p>
                                 </div>
                             </div>
