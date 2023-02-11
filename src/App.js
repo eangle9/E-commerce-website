@@ -1,25 +1,122 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+//import Layout from './components/Layout';
+import Home from "./Pages/Home";
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
+    }
+  ]);
+  return (
+    <div className="app">
+      <Header />
+      <RouterProvider router={router} />
+      <Footer />
+    </div>
+
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* import React from 'react';
+import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar.jsx';
+import Home from './components/Home/Home.jsx';
+import Cart from './components/Cart/Cart.jsx';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element:<Home/> ,
+    },
+  {
+    path: "/cart",
+    element: <Cart/>,
+  },
+  ]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          addis <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <NavBar />
+        <RouterProvider router={router} />
+
     </div>
   );
 }
 
 export default App;
+ */
