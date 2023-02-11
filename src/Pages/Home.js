@@ -84,11 +84,39 @@ const Home = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="services d-flex gap-15 justify-content-between align-items-center">
-                            <div className="d-flex align-items-center gap-30">
+                            <div className="d-flex align-items-center gap-15">
                                 <img src="images/service.png" alt="service"/>
                                 <div>
-                                    <h6>Free Shipping test</h6>
-                                    <p>From all orders over $100</p>
+                                    <h6>Free Shipping </h6>
+                                    <p className="mb-0">From all orders over $100</p>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center gap-15">
+                                <img src="images/service-02.png" alt="sevice"/>
+                                <div>
+                                    <h6>Daily Surprise Offers</h6>
+                                    <p className="mb-0">Save upto 25% off</p>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center gap-15">
+                                <img src="images/service-03.png" alt="sevice"/>
+                                <div>
+                                    <h6>Support 24/7</h6>
+                                    <p className="mb-0">Shop with an expert</p>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center gap-15">
+                                <img src="images/service-04.png" alt="sevice"/>
+                                <div>
+                                    <h6>Affordable prices</h6>
+                                    <p className="mb-0">Get Factory Default Price</p>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center gap-15">
+                                <img src="images/service-05.png" alt="sevice"/>
+                                <div>
+                                    <h6>Secure Payments</h6>
+                                    <p className="mb-0">100% Protected Payments</p>
                                 </div>
                             </div>
                         </div>
