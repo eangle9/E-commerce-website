@@ -1,4 +1,6 @@
 import React from 'react';
+import Marquee from 'react-fast-marquee';
+import BlogCard from '../components/BlogCard';
 
 const Home = () => {
     return (
@@ -127,66 +129,110 @@ const Home = () => {
             <section className="padded-content home-wrapper-2 py-5">
                 <div className="container-xxl">
                     <div className="row">
-                        <div className="catagories">
-                            <div className="d-flex gap-10 flex-wrap  justify-content-between align-items-center">
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Computers & Laptop</h6>
-                                        <p>8 items</p>
-                                    </div>
-                                    <img src="images/laptop.jpg" alt="laptop" />
+                        <div className="categories d-flex  flex-wrap  justify-content-between align-items-center">
+                            <div className=" adda d-flex  align-items-center">
+                                <div>
+                                    <h6>Computers</h6>
+                                    <p>8 items</p>
                                 </div>
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Cameras & Videos</h6>
-                                        <p>10 items</p>
-                                    </div>
-                                    <img src="images/camera.jpg" alt="camera" />
+                                <img src="images/laptop.jpg" alt="laptop" />
+                            </div>
+                            <div className="d-flex  align-items-center">
+                                <div>
+                                    <h6>Cameras</h6>
+                                    <p>10 items</p>
                                 </div>
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Smart Televsion</h6>
-                                        <p>12 items</p>
-                                    </div>
-                                    <img src="images/tv.jpg" alt="tv" />
+                                <img src="images/camera.jpg" alt="camera" />
+                            </div>
+                            <div className="d-flex  align-items-center">
+                                <div>
+                                    <h6>Smart Tv</h6>
+                                    <p>12 items</p>
                                 </div>
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Cameras</h6>
-                                        <p>10 items</p>
-                                    </div>
-                                    <img src="images/camera.jpg" alt="camera" />
+                                <img src="images/tv.jpg" alt="tv" />
+                            </div>
+                            <div className="d-flex  align-items-center">
+                                <div>
+                                    <h6>Smart Headphone</h6>
+                                    <p>10 items</p>
                                 </div>
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Computers & Laptop</h6>
-                                        <p>8 items</p>
-                                    </div>
-                                    <img src="images/laptop.jpg" alt="laptop" />
+                                <img src="images/headphone.jpg" alt="camera" />
+                            </div>
+                            <div className="d-flex  align-items-center">
+                                <div>
+                                    <h6>Computers</h6>
+                                    <p>8 items</p>
                                 </div>
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Cameras & Videos</h6>
-                                        <p>10 items</p>
-                                    </div>
-                                    <img src="images/camera.jpg" alt="camera" />
+                                <img src="images/laptop.jpg" alt="laptop" />
+                            </div>
+                            <div className="d-flex  align-items-center">
+                                <div>
+                                    <h6>Cameras</h6>
+                                    <p>10 items</p>
                                 </div>
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Smart Televsion</h6>
-                                        <p>12 items</p>
-                                    </div>
-                                    <img src="images/tv.jpg" alt="tv" />
+                                <img src="images/camera.jpg" alt="camera" />
+                            </div>
+                            <div className="d-flex  align-items-center">
+                                <div>
+                                    <h6>Smart Tv</h6>
+                                    <p>12 items</p>
                                 </div>
-                                <div className="d-flex gap-10 align-items-center">
-                                    <div>
-                                        <h6>Cameras</h6>
-                                        <p>10 items</p>
-                                    </div>
-                                    <img src="images/camera.jpg" alt="camera" />
+                                <img src="images/tv.jpg" alt="tv" />
+                            </div>
+                            <div className="d-flex  align-items-center">
+                                <div>
+                                    <h6>Smart Headphone</h6>
+                                    <p>10 items</p>
                                 </div>
+                                <img src="images/headphone.jpg" alt="camera" />
                             </div>
                         </div>
+                    </div>s
+                </div>
+            </section>
+            <section className="padded-content marquee-wrapper py-5">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="marquee-inner-wrapper card-wrapper">
+                                <Marquee>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-01.png" />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-02.png" />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-03.png" />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-04.png" />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-05.png" />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-06.png" />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-07.png" />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img src="images/brand-08.png" />
+                                    </div>
+                                </Marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="padded-content blog-wrapper home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <BlogCard/>
+                        <BlogCard/>
+                        <BlogCard/>
+                        <BlogCard/>
                     </div>
                 </div>
             </section>
