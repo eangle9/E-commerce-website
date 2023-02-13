@@ -11,6 +11,7 @@
   --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
   --color-ededed: #ededed;
+  --color-777777: #777777;
 }
 body{
   font-family: 'Rubik', sans-serif;
@@ -184,25 +185,90 @@ footer .input-group-text{
 }
 /* home wrapper-2 end here */
 /* caagerles section */
-.catagories{
+.categories{
   background-color: white;
   box-shadow: 0 0 10px #0000001a;
   padding: 15px;
 }
-.catagories>div{
-  width: 100%;
+.categories>div{
+  width: 25%;
   padding: 10px 10px 10px 20px;
 }
-.catagories>div:nth-child(1),
-.catagories>div:nth-child(2),
-.catagories>div:nth-child(3),
-.catagories>div:nth-child(4){
-border-bottom: 1px solid var(--color-ededed);
+.categories>div>div{
+  width: 60%;
 }
-.catagories>div:nth-child(1),
-.catagories>div:nth-child(2),
-.catagories>div:nth-child(3){
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4){
+  border-bottom: 1px solid var(--color-ededed);
+}
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(5),
+.categories > div:nth-child(6),
+.categories > div:nth-child(7){
   border-right: 1px solid var(--color-ededed);
 }
+
+/* .adda {  
+  border-bottom: 1px solid var(--color-ededed);
+  border-right: 1px solid var(--color-ededed);
+} */
 /* catagories ens here */
+
+/* marquee part */
+
+
+/* marquee part end here */
+
+/* blog part */
+.section-heading{
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.blog-card{
+  background-color: white;
+  
+  border-radius: 10px;
+}
+.card-image img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-btn{
+  background-color: var(--color-232f3e);
+  color: white;
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 25px;
+}
+.blog-btn:hover{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+.blog-content{
+  padding: 15px;
+}
+.blog-content p.date{
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-777777);
+}
+.blog-content h5.title{
+  font-size: 18px;
+  color: var(--color-131921);
+}
+.blog-content p.desc{
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-777777);
+}
+/* blog part end here */
 /* home part end here */
