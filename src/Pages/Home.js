@@ -198,12 +198,61 @@ const Home = () => {
                         <div className="col-12">
                             <h3 className="section-heading">Featured Collection</h3>
                         </div>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                    </div>
+                </div>
+            </section>
+            <section className="famous-wrapper padded-content home-wrapper-2 py-5">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-3">
+                            <div className="famous-card position-relative d-flex align-items-center">
+                                <img src="images/famous-1.webp" alt="famous" className="img-fluid" />
+                                <div className="famous-content mb-3  position-absolute">
+                                    <h5>Big Screen</h5>
+                                    <h6>Smart Watch Series7</h6>
+                                    <p>From $399 or 16.62/mo. for 24mo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-3">
+                            <div className="famous-card bg-white position-relative d-flex align-items-center">
+                                <img src="images/famous-2.webp" alt="famous" className="img-fluid" />
+                                <div className="famous-content mb-3 position-absolute">
+                                    <h5 className="text-dark">studio display</h5>
+                                    <h6  className="text-dark">6 nits of brightness</h6>
+                                    <p  className="text-dark">27-inch 5K Retina display</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-3">
+                            <div className="famous-card position-relative color-black bg-white d-flex align-items-center">
+                                <img src="images/famous-3.webp" alt="famous" className="img-fluid" />
+                                <div className="famous-content mb-3 position-absolute">
+                                    <h5  className="text-dark">smart phones</h5>
+                                    <h6  className="text-dark">Smartphone 13 Pro.</h6>
+                                    <p  className="text-dark">Now in Green From $999.00 or 41.62/mo. for 24 mo.Footnote*</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-3">
+                            <div className="famous-card bg-white position-relative d-flex align-items-center">
+                                <img src="images/famous-4.webp" alt="famous" className="img-fluid" />
+                                <div className="famous-content mb-3 position-absolute">
+                                    <h5  className="text-dark">Home Speakers</h5>
+                                    <h6  className="text-dark">Room-filling sound</h6>
+                                    <p  className="text-dark">From $699 or 116.58/mo. for 12 mo.*</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -215,9 +264,9 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <SpecialProduct/>
-                        <SpecialProduct/>
-                        <SpecialProduct/>
+                        <SpecialProduct />
+                        <SpecialProduct />
+                        <SpecialProduct />
                     </div>
                 </div>
             </section>
@@ -256,17 +305,17 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>     
+            </section>
             <section className="padded-content blog-wrapper home-wrapper-2 py-5">
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
                             <h3 className="section-heading">Our Latest Blogs</h3>
                         </div>
-                        <BlogCard/>
-                        <BlogCard/>
-                        <BlogCard/>
-                        <BlogCard/>
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
                     </div>
                 </div>
             </section>
