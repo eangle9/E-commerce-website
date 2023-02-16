@@ -304,7 +304,7 @@ footer .input-group-text{
 }
 .product-card .product-details h5{
   font-size: 15px;
-  color: var(--color-1b1b1c);
+  color: var(--color-1c1c1b);
 }
 .product-card .product-details p.price{
   font-size: 16px;
@@ -320,4 +320,32 @@ footer .input-group-text{
   right: 10px;
 }
 /* product part end here */
+
+/* special-product */
+.special-product{
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.special-product .special-product-content h5{
+  color: var(--color-bf4800);
+}
+.special-product .special-product-content h6{
+  font-size: 15px;
+  color: var(--color-1c1c1b);
+}
+
+.btn-cart{
+  background-color:var(--color-232f3e);
+  color:white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.btn-cart:hover{
+  background-color: var(--color-777777);
+  color: black;
+  border: none;
+}
+/* special-product end here */
 /* home part end here */
