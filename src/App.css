@@ -379,3 +379,62 @@ footer .input-group-text{
 }
 /* famous card end here */
 /* home part end here */
+
+/* our store part */
+
+/* filter card  */
+.filter-card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px 25px;
+}
+.filter-title{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+.form-check-input:focus{
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+.form-check-input:checked{
+  background-color: var(--color-febd69);
+  border-color: var(--color-febd69);
+}
+.filter-card ul,
+.form-check .form-check-label{
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+}
+.sub-title{
+ font-size: 14px;
+ font-weight: 600;
+ color: var(--color-1c1c1b); 
+ margin-bottom: 20px;
+}
+.user-email{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.colors{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.colors li{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  
+}
+/* filter card ends here */
+
+/* our store part ends here */

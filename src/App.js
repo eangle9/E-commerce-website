@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header";
+//import Header from "./components/Header";
 import Footer from "./components/Footer";
 import {
   createBrowserRouter,
@@ -10,8 +10,10 @@ import {
 import Home from "./Pages/Home";
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import OurStore from './Pages/OurStore';
 function App() {
   const router = createBrowserRouter([
+
     {
       path: "/",
       element: <Home />,
@@ -23,11 +25,15 @@ function App() {
     {
       path: "/contact",
       element: <Contact />,
+    },
+    {
+      path: "/store",
+      element: <OurStore title="Our Store"/>,
     }
   ]);
   return (
     <div className="app">
-      <Header />
+      {/* <Header /> */}
       <RouterProvider router={router} />
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-//import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 const Header = () => {
     return (
@@ -94,7 +94,7 @@ const Header = () => {
                             </div>
                             <div className="menu-links d-flex align-items-center gap-15">
                                 <a href="#">Home</a>
-                                <a href="#">our store</a>
+                                <Link to="/store">our store</Link>
                                 <a href="#">blogs</a>
                                 <a href="#"> contact</a>
                             </div>

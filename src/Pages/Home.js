@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../components/Header';
 import Marquee from 'react-fast-marquee';
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
@@ -7,6 +8,10 @@ import SpecialProduct from '../components/SpecialProduct';
 const Home = () => {
     return (
         <>
+        <div>
+        <Header/>
+        </div>
+        
             <section className=" padded-content home-wrapper-1 py-5">
                 <div className="container-xxl">
                     <div className="row">
