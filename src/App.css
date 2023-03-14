@@ -13,6 +13,7 @@
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-1c1c1b: #1b1b1c;
+  --color-f3f3f3: #f3f3f3;
 }
 body{
   font-family: 'Rubik', sans-serif;
@@ -434,6 +435,28 @@ footer .input-group-text{
   background-color: red;
   border-radius: 50%;
   
+}
+.random-1{
+  display: flex;
+}
+.random-products h5{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.border-line{
+  border-bottom: 1px solid var(--color-3b4149);
+}
+.filter-sort-grid{
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.grid img{
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-f3f3f3);
+  padding: 8px;
+  border-radius: 3px;
 }
 /* filter card ends here */
 
