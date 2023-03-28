@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 const Header = () => {
     return (
@@ -11,7 +11,7 @@ const Header = () => {
                             <p className="text-white mb-0">Free shipping over $100 and Free Returns</p>
                         </div>
                         <div className="col-6">
-                            <p className="text-end text-white mb-0">Hotline:<a className="text-white" href="tel:+251 f993975022">+251 993975022</a></p>
+                            <p className="text-end text-white mb-0">Hotline:<a className="text-white" href="tel:+251 993975022">+251 993975022</a></p>
                         </div>
                     </div>
                 </div>
@@ -22,13 +22,14 @@ const Header = () => {
 
                         <div className="col-2">
                             <h3>
-                                <a className="text-white" href="#">Dev Addis.</a>
+                                <Link to='/' className="text-white">Dev Addis.</Link>
                             </h3>
                         </div>
                         <div className="col-5">
                             <div className="input-group ">
                                 <input
-                                    type="text" className="form-control py-2"
+                                    type="text" 
+                                    className="form-control py-2"
                                     placeholder="Search Product Here..."
                                     aria-label="Search Product Here..."
                                     aria-describedby="basic-addon2"
@@ -42,32 +43,32 @@ const Header = () => {
                         <div className="col-5">
                             <div className="header-upper-links d-flex align-items-center justify-content-between">
                                 <div>
-                                    <a className="d-flex align-items-center gap-10 text-white" href="">
+                                    <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white" >
                                         <img src="images/compare.svg" alt="compare" />
                                         <p className="mb-0">Compare <br /> Products</p>
-                                    </a>
+                                    </Link >
                                 </div>
                                 <div>
-                                    <a className="d-flex align-items-center gap-10 text-white" href="#">
+                                    <Link to="/wishlist"  className="d-flex align-items-center gap-10 text-white" >
                                         <img src="images/wishlist.svg" alt="wishkist" />
                                         <p className="mb-0">Favorite <br /> Wishlist</p>
-                                    </a>
+                                    </Link >
 
                                 </div>
                                 <div>
-                                    <a className="d-flex align-items-center gap-10 text-white" href="#">
+                                    <Link to="/login" className="d-flex align-items-center gap-10 text-white" >
                                         <img src="images/user.svg" alt="user" />
                                         <p className="mb-0">Log in <br /> My Account</p>
-                                    </a>
+                                    </Link >
                                 </div>
                                 <div>
-                                    <a className="d-flex align-items-center gap-10 text-white" href="#">
+                                    <Link to="/cart"  className="d-flex align-items-center gap-10 text-white" >
                                         <img src="images/cart.svg" alt="cart" />
                                         <div>
                                             <span className="badge bg-white text-dark" >0</span>
                                             <p className="mb-0">$500</p>
                                         </div>
-                                    </a>
+                                    </Link >
                                 </div>
 
                             </div>
@@ -93,10 +94,11 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="menu-links d-flex align-items-center gap-15">
-                                <a href="#">Home</a>
+                                <Link to="/">Home</Link>
                                 <Link to="/store">our store</Link>
-                                <a href="#">blogs</a>
-                                <a href="#"> contact</a>
+                                <Link to="/blogs">blogs</Link>
+                                <Link to="/contact"> contact</Link>
+
                             </div>
                         </div>
                     </div>

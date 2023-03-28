@@ -11,6 +11,16 @@ import Home from "./Pages/Home";
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import OurStore from './Pages/OurStore';
+import Blog from './Pages/Blog';
+import Compare from './Pages/Compare';
+import Wishlist from './Pages/Wishlist';
+import Login from './Pages/Login';
+import Cart from './Pages/Cart';
+import Forgot from './Pages/Forgot';
+import SignUp from './Pages/SignUp';
+import Resetpassword from './Pages/Resetpassword';
+import SingleBlog from './Pages/SingleBlog';
+
 function App() {
   const router = createBrowserRouter([
 
@@ -24,11 +34,47 @@ function App() {
     },
     {
       path: "/contact",
-      element: <Contact />,
+      element: <Contact/>,
     },
     {
       path: "/store",
-      element: <OurStore title="Our Store"/>,
+      element: <OurStore/>,
+    },
+    {
+      path: "/blogs",
+      element: <Blog/>,
+    },
+    {
+      path: "/blog/:id",
+      element: <SingleBlog/>
+    },
+    {
+      path: "/compare-product",
+      element: <Compare/>
+    },
+    {
+      path: "/wishlist",
+      element: <Wishlist/>
+    },
+    {
+      path: "/cart",
+      element: <Cart/>
+    },
+    {
+      path: "/login",
+      element: <Login/>
+    },
+    {
+      path: "/forgot-password",
+      element: <Forgot/>
+    },
+    {
+      path: "/SignUp",
+      element: <SignUp/>
+    },
+    {
+      path: "/reset",
+      element: <Resetpassword/>
     }
   ]);
   return (

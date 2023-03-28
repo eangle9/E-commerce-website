@@ -4,14 +4,15 @@ import Marquee from 'react-fast-marquee';
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
+import Meta from '../components/Meta';
 
 const Home = () => {
     return (
         <>
-        <div>
-        <Header/>
-        </div>
-        
+            <div>
+                <Header />
+            </div>
+            <Meta title={"Home"} />
             <section className=" padded-content home-wrapper-1 py-5">
                 <div className="container-xxl">
                     <div className="row">
@@ -231,8 +232,8 @@ const Home = () => {
                                 <img src="images/famous-2.webp" alt="famous" className="img-fluid" />
                                 <div className="famous-content mb-3 position-absolute">
                                     <h5 className="text-dark">studio display</h5>
-                                    <h6  className="text-dark">6 nits of brightness</h6>
-                                    <p  className="text-dark">27-inch 5K Retina display</p>
+                                    <h6 className="text-dark">6 nits of brightness</h6>
+                                    <p className="text-dark">27-inch 5K Retina display</p>
                                 </div>
                             </div>
                         </div>
@@ -241,9 +242,9 @@ const Home = () => {
                             <div className="famous-card position-relative color-black bg-white d-flex align-items-center">
                                 <img src="images/famous-3.webp" alt="famous" className="img-fluid" />
                                 <div className="famous-content mb-3 position-absolute">
-                                    <h5  className="text-dark">smart phones</h5>
-                                    <h6  className="text-dark">Smartphone 13 Pro.</h6>
-                                    <p  className="text-dark">Now in Green From $999.00 or 41.62/mo. for 24 mo.Footnote*</p>
+                                    <h5 className="text-dark">smart phones</h5>
+                                    <h6 className="text-dark">Smartphone 13 Pro.</h6>
+                                    <p className="text-dark">Now in Green From $999.00 or 41.62/mo. for 24 mo.Footnote*</p>
                                 </div>
                             </div>
                         </div>
@@ -252,9 +253,9 @@ const Home = () => {
                             <div className="famous-card bg-white position-relative d-flex align-items-center">
                                 <img src="images/famous-4.webp" alt="famous" className="img-fluid" />
                                 <div className="famous-content mb-3 position-absolute">
-                                    <h5  className="text-dark">Home Speakers</h5>
-                                    <h6  className="text-dark">Room-filling sound</h6>
-                                    <p  className="text-dark">From $699 or 116.58/mo. for 12 mo.*</p>
+                                    <h5 className="text-dark">Home Speakers</h5>
+                                    <h6 className="text-dark">Room-filling sound</h6>
+                                    <p className="text-dark">From $699 or 116.58/mo. for 12 mo.*</p>
                                 </div>
                             </div>
                         </div>
@@ -317,10 +318,20 @@ const Home = () => {
                         <div className="col-12">
                             <h3 className="section-heading">Our Latest Blogs</h3>
                         </div>
-                        <BlogCard />
-                        <BlogCard />
-                        <BlogCard />
-                        <BlogCard />
+                    </div>
+                    <div className="row">
+                        <div className="col-3">
+                            <BlogCard />
+                        </div>
+                        <div className="col-3">
+                            <BlogCard />
+                        </div>
+                        <div className="col-3">
+                            <BlogCard />
+                        </div>
+                        <div className="col-3">
+                            <BlogCard />
+                        </div>
                     </div>
                 </div>
             </section>

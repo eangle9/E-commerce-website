@@ -14,6 +14,7 @@
   --color-777777: #777777;
   --color-1c1c1b: #1b1b1c;
   --color-f3f3f3: #f3f3f3;
+  --color-1c1c1b: #1c1c1b;
 }
 body{
   font-family: 'Rubik', sans-serif;
@@ -40,8 +41,8 @@ a{
 }
 /* header part */
 .padded-content {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #header .header-top-strip{
 border-bottom: 1px solid var(--color-3b4149);
@@ -282,7 +283,7 @@ footer .input-group-text{
   overflow: hidden;
 }
 .product-card .product-image{
-  height: 250px;
+  height: 150px;
 }
 .product-card .product-image img{
   object-fit: contain;
@@ -298,6 +299,10 @@ footer .input-group-text{
 }
 .product-card:hover .action-bar{
   right: 10px;
+}
+.product-card .product-details{
+  display: flex;
+  flex-direction: column;
 }
 .product-card .product-details h6{
   font-size: 13px;
@@ -461,3 +466,186 @@ footer .input-group-text{
 /* filter card ends here */
 
 /* our store part ends here */
+
+/* contact page */
+
+.contact-inner-wrapper{
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 15px;
+  gap: 15px;
+}
+.back-color{
+  background-color: var(--color-f5f5f7);
+}
+.contact-inner-wrapper > div{
+  width: 48%;
+}
+.contact-title{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+.contact-inner-wrapper form .form-control{
+  background-color: var(--color-f5f5f7);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+.contact-inner-wrapper ul{
+  list-style-type: none;
+}
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p{
+  color:var(--color-131921);
+}
+/* contact page ends */
+
+
+/* compare product */
+.compare-product-card,
+.wishlist-product-card{
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.compare-product-card .cross,
+.wishlist-product-card .cross{
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+.product-card-details h5.title,
+.wishlist-product-details h5.wishlist-title{
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color:#1c1c1b;
+}
+.product-card-details h6.price,
+.wishlist-product-details h6.wishlist-price{
+  font-size: 16px;
+  letter-spacing: .1px;
+  font-weight: 500;
+}
+.product-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* compare product ends */
+
+/* wishlist product  */
+
+
+/* wishlist product ends */
+
+/* login user */
+.auth-card{
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 500px;
+  margin: 30px auto;
+}
+.auth-card h3{
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-777777)
+}
+.auth-card .form-control{
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  font-size: 14px;
+  color: var(--color-777777);
+  border-color: transparent;
+  border-radius: 10px;
+}
+.auth-card a{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-131921);
+}
+.auth-card .signUp{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+.auth-card .signUp:hover{
+  background-color: var(--color-131921);
+  color: white;
+}
+
+ /* login user ends */
+
+ /* forgot password */
+
+ .forgot-card{
+   padding: 20px;
+   width: 500px;
+   margin: 30px auto;
+   background-color: white;
+ }
+ .forgot-card h3{
+   font-size: 19px;
+   font-weight: 500;
+   color: var(--color-777777);
+ }
+ .forgot-card p{
+   font-size: 13px;
+   font-weight: 300;
+ }
+ .forgot-card .form-control{
+   height: 50px;
+   background-color: var(--color-f5f5f7);
+   font-size: 15px;
+   border-color: transparent;
+ }
+ 
+  .submit-btn{
+    background-color: var(--color-232f3e);
+    color: white;
+    font-size: 14px;
+    padding: 10px 33px;
+    border-radius: 25px;
+  }
+  .submit-btn:hover{
+    background-color: var(--color-febd69);
+    color: var(--color-131921);
+ }
+ .forgot-card a{
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--color-131921);
+ }
+  
+
+ /* forgot password ends */
+
+ /* signUp card */
+
+ .signup-card{
+   padding: 20px;
+   background-color: white;
+   width: 500px;
+   margin: 30px auto;
+ }
+ .signup-card h3{
+   font-size: 20px;
+   font-weight: 500;
+   color: var(--color-777777);
+ }
+.signup-card .form-control{
+  height: 50px;
+  font-size: 14px;
+  border-color: transparent;
+  background-color: var(--color-f5f5f7);
+  border-radius: 10px;
+}
+ /* signUp card ends */
