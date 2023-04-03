@@ -16,7 +16,7 @@ const Home = () => {
             <section className=" padded-content home-wrapper-1 py-5">
                 <div className="container-xxl">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-12 col-sm-6">
                             <div className="main-banner position-relative ">
                                 <img
                                     src="images/main-banner-1.jpg"
@@ -25,14 +25,14 @@ const Home = () => {
                                 />
                                 <div className="main-banner-content position-absolute">
                                     <h4>supercharged for pros</h4>
-                                    <h5>iPad S13+ pro.</h5>
+                                    <h5>iPod S13+ pro.</h5>
                                     <p>From $900.00 or $41.62/mo.</p>
                                     <button>BUY NOW</button>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6">
-                            <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center ">
+                        <div className="col-12 col-sm-6">
+                            <div className="d-flex flex-wrap-reverse gap-10 justify-content-between align-items-center ">
                                 <div className="small-banner position-relative ">
                                     <img
                                         src="images/catbanner-01.jpg"
@@ -67,7 +67,7 @@ const Home = () => {
                                     />
                                     <div className="small-banner-content position-absolute">
                                         <h4>new arrival</h4>
-                                        <h5>Buy IPad Air</h5>
+                                        <h5>Buy IPod Air</h5>
                                         <p>From $999.00 or <br /> $41.62/mo.</p>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@ const Home = () => {
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
-                            <div className="services d-flex gap-15 justify-content-between align-items-center">
+                            <div className="services d-flex  gap-15 justify-content-between align-items-center">
                                 <div className="d-flex align-items-center gap-15">
                                     <img src="images/service.png" alt="service" />
                                     <div>
@@ -195,7 +195,7 @@ const Home = () => {
                                 <img src="images/headphone.jpg" alt="camera" />
                             </div>
                         </div>
-                    </div>s
+                    </div>
                 </div>
             </section>
             <section className="featured-wrapper padded-content blog-wrapper home-wrapper-2 py-5">
@@ -215,6 +215,11 @@ const Home = () => {
             </section>
             <section className="famous-wrapper padded-content home-wrapper-2 py-5">
                 <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">Our Popular Products</h3>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-3">
                             <div className="famous-card position-relative d-flex align-items-center">

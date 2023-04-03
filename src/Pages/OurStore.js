@@ -3,7 +3,7 @@ import Meta from '../components/Meta';
 //import { Link } from "react-router-dom";
 import Header from '../components/Header';
 import ReactStars from "react-rating-stars-component";
-//import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/ProductCard";
 import BreadCrump from "../components/BreadCrump";
 import Colors from "../components/Colors";
 
@@ -12,15 +12,14 @@ import Colors from "../components/Colors";
 
 
 const OurStore = (props) => {
-    /* const [grid, setGrid] = useState(4);
-    alert(grid); */
+    const [grid, setGrid] = useState(4);
     const { title } = props;
     return (
         <>
             <Header />
             <Meta title={"Our Store"} />
-            <BreadCrump title="Our Store"/>
-            
+            <BreadCrump title="Our Store" />
+
             <div className="store-wrapper padded-content home-wrapper-2 py-5">
                 <div className="container-xxl">
                     <div className="row">
@@ -81,7 +80,7 @@ const OurStore = (props) => {
                                 </div>
                                 <h5 className="sub-title">Colors</h5>
                                 <div>
-                                    <Colors/>
+                                    <Colors />
                                 </div>
                                 <h5 className="sub-title">Size</h5>
                                 <div>
@@ -144,25 +143,39 @@ const OurStore = (props) => {
                             <div className="filter-card mb-3">
                                 <h3 className="filter-title">Random Products</h3>
                                 <div>
-                                    <div className="random-products ">
-                                        <div className="random-1">
-                                            <div className="w-50">
-                                                <img className="r-headphones img-fluid" src="images/headphone.jpg" alt="headphone" />
-                                            </div>
-
-                                            <div className="w-50">
-                                                <h5>Kids Headphones Bulk 10 pack Multi-colored For...</h5>
-                                                <ReactStars
-                                                    count={5}
-                                                    size={24}
-                                                    activeColor="#ffd700"
-                                                    value="4"
-                                                    edit={false}
-                                                />
-                                                <b> $ 100</b>
-                                            </div>
+                                    <div className="random-products mb-3 d-flex ">
+                                        <div className="w-50">
+                                            <img className="r-headphones img-fluid" src="images/headphone.jpg" alt="headphone" />
                                         </div>
-                                        <div className="border-line"></div>
+
+                                        <div className="w-50">
+                                            <h5>Kids Headphones Bulk 10 pack Multi-colored For...</h5>
+                                            <ReactStars
+                                                count={5}
+                                                size={24}
+                                                activeColor="#ffd700"
+                                                value="4"
+                                                edit={false}
+                                            />
+                                            <b className="mb-3"> $ 100</b>
+                                        </div>
+                                    </div>
+                                    <div className="random-products d-flex ">
+                                        <div className="w-50">
+                                            <img className="r-headphones img-fluid" src="images/headphone.jpg" alt="headphone" />
+                                        </div>
+
+                                        <div className="w-50">
+                                            <h5>Kids Headphones Bulk 10 pack Multi-colored For...</h5>
+                                            <ReactStars
+                                                count={5}
+                                                size={24}
+                                                activeColor="#ffd700"
+                                                value="4"
+                                                edit={false}
+                                            />
+                                            <b> $ 100</b>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +197,7 @@ const OurStore = (props) => {
 
                                         </select>
                                     </div>
-                                  {/*   <div className="d-flex align-items-center gap-10">
+                                    <div className="d-flex align-items-center gap-10">
                                         <p className="total-products mb-0">21Products</p>
                                         <div className="d-flex align-items-center gap-10 grid">
                                             <img
@@ -220,14 +233,19 @@ const OurStore = (props) => {
                                                 alt="grid"
                                             />
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                             </div>
-                           {/*  <div> 
+                            <div>
                                 <div className="product-list pb-5">
+                                    <div className="d-flex flex-wrap gap-10">
                                     <ProductCard grid={grid} />
-                                </div> 
-                            </div>*/}
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -38,7 +38,7 @@ const Footer = () => {
                             <div className="footer-links d-flex flex-column ">
                                 <address className="text-white fs-6">
                                     Addis Store <br />No. 8822 Tulu, Addis Ababa <br />Addis Ababa
-                                   </address>
+                                </address>
                                 <a className="text-white mt-3 d-block mb-1" href="tel:+251-993975022">+251-993975022</a>
                                 <a className="text-white mt-2 d-block mb-0" href="mail to:engdaworkyismaw9@gmail.com">engdaworkyismaw9@gmail.com</a>
                             </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                         <div className="col-3">
                             <h4 className="text-white mb-4">Account</h4>
                             <div className="footer-links d-flex flex-column ">
-                                <a className="text-white" href="#">Search</a>
+                                <a className="text-white py-2 mb-1" href="#">Search</a>
                                 <a className="text-white py-2 mb-1" href="#">About Us</a>
                                 <a className="text-white py-2 mb-1" href="#">Faq</a>
                                 <a className="text-white py-2 mb-1" href="#">Contact</a>
@@ -95,7 +95,7 @@ const Footer = () => {
                     <div className="col-12">
                         <p className="text-center text-white mb-0">
                             &copy; {new Date().getFullYear()}; Developer by Addis;
-                            </p>
+                        </p>
                     </div>
                 </div>
             </footer>

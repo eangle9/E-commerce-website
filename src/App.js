@@ -20,6 +20,7 @@ import Forgot from './Pages/Forgot';
 import SignUp from './Pages/SignUp';
 import Resetpassword from './Pages/Resetpassword';
 import SingleBlog from './Pages/SingleBlog';
+import SingleProduct from './Pages/SingleProduct';
 
 function App() {
   const router = createBrowserRouter([
@@ -47,6 +48,10 @@ function App() {
     {
       path: "/blog/:id",
       element: <SingleBlog/>
+    },
+    {
+      path: "/:id",
+      element: <SingleProduct/>
     },
     {
       path: "/compare-product",

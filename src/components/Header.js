@@ -7,7 +7,7 @@ const Header = () => {
             <header className="header-top-strip padded-content py-3">
                 <div className="container-xxl">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-12 col-md-6">
                             <p className="text-white mb-0">Free shipping over $100 and Free Returns</p>
                         </div>
                         <div className="col-6">
@@ -50,7 +50,7 @@ const Header = () => {
                                 </div>
                                 <div>
                                     <Link to="/wishlist"  className="d-flex align-items-center gap-10 text-white" >
-                                        <img src="images/wishlist.svg" alt="wishkist" />
+                                        <img src="images/wishlist.svg" alt="wishlist" />
                                         <p className="mb-0">Favorite <br /> Wishlist</p>
                                     </Link >
 
@@ -93,7 +93,8 @@ const Header = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="menu-links d-flex align-items-center gap-15">
+                            <div
+                             className="menu-links d-flex align-items-center gap-15">
                                 <Link to="/">Home</Link>
                                 <Link to="/store">our store</Link>
                                 <Link to="/blogs">blogs</Link>

@@ -1,22 +1,23 @@
 import React from 'react';
 import ReactStars from 'react-rating-stars-component';
-import {  useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 
 const ProductCard = (props) => {
-    const grid=props;
-    let location = useLocation;
-    console.log(location);
+    const { grid } = props
+    let location = useLocation();
     return (
         <>
-            <div className="col-2">
-            {/* {`${location.pathName == "/store"}? col-${grid} : "col-3"`}  */}
-                <div className="product-card position-relative">
+            <div
+                className={`${location.pathname == "/store" ? `gr-${grid}` : "col-2"}`}
+            >
+                <Link to="/:id" className="product-card position-relative">
                     <div className="wishlist-icon position-absolute">
-                            <img src="images/wish.svg" alt="wish" />
+                        <img src="images/wish.svg" alt="wish" />
                     </div>
                     <div className="product-image">
-                        <img src="images/watch.jpg" className="img-fluid" alt="product" />
-                        <img src="images/headphone.jpg" alt="product" />
+                        <img src="images/watch.jpg" className="images-f" alt="product" />
+                        <img src="images/watch-02.webp" className="img-fluid watch-02" alt="product" />
                     </div>
                     <div className="product-details">
                         <h6 className="brand">Havells</h6>
@@ -44,8 +45,9 @@ const ProductCard = (props) => {
                         </div>
 
                     </div>
-                </div>
+                </Link>
             </div>
+            
         </>
     );
 }
